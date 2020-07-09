@@ -115,6 +115,7 @@ int main() {
 ```
 cat /proc/filesystems
 ```
+![Image text](https://github.com/lizhicun/pipe/blob/master/src/vfs.png)
 在用户态调用read函数读取一个文件描述符时，主要过程如下:
 ```
 asmlinkage ssize_t sys_read(unsigned int fd, char __user * buf, size_t count)
