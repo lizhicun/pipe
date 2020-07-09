@@ -18,8 +18,23 @@ switching.
                                                 M. D. McIlroy
                                                 October 11, 1964
 
-## 本节内容
+## 内容概要
 ### 1. 管道的使用
 ### 2. 虚拟文件系统
 ### 3. 内核态管道的实现
 ### 4. 总结
+
+## 正文
+### 管道的使用
+```
+cat /tmp/simlog.log | grep 'error'
+```
+这行命令的具体实现过程是：
+* shell进程fork子进程，执行exec将```cat /tmp/simlog.log```载入内存
+* cat进程中，用pipe定义出管道
+* cat进程再fork出子进程,子进程将执行```grep error```
+* cat进程中关闭管道读端，将cat进程的标准输出重定向到管道的写端
+* grep进程中将管道的写端关闭，将标准输入重定向到管道的读端，再调用exec将grep进程载入内存
+
+现在对上述过程模拟
+
