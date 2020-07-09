@@ -1,6 +1,6 @@
 # 管道
+## 由来
 管道的发名者叫，Malcolm Douglas McIlroy，他也是Unix的创建者，是Unix文化的缔造者之一。下面是管道在1964年10月11日，出现的第一个打印稿。
-
                        - 10 -
             Summary--what's most important.
     To put my strongest concerns into a nutshell:
@@ -15,7 +15,11 @@ general indexing, responsibility, generations, data path
 switching.
 4. It should be possible to get private system components
 (all routines are system components) for buggering around with.
-
                                                 M. D. McIlroy
                                                 October 11, 1964
 
+## 本节内容
+### 1. 管道的使用
+### 2. 虚拟文件系统
+### 3. 内核态管道的实现
+### 4. 总结
