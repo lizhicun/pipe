@@ -1,6 +1,7 @@
 ## 管道
 ### 由来
 管道的发名者叫，Malcolm Douglas McIlroy，他也是Unix的创建者，是Unix文化的缔造者之一。下面是管道在1964年10月11日，出现的第一个打印稿。
+![Image text](https://github.com/lizhicun/pipe/blob/master/src/pic-3.png)
 ```
                        - 10 -
             Summary--what's most important.
